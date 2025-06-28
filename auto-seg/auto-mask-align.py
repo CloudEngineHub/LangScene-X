@@ -431,14 +431,13 @@ if __name__ == '__main__':
     base_dir = args.output_dir
 
     ##### load Sam2 and Sam1 Model #####
-    sam2_checkpoint = args.sam1_checkpoint
+    sam2_checkpoint = args.sam2_checkpoint
     model_cfg = "sam2_hiera_l.yaml"
-
     predictor = build_sam2_video_predictor(model_cfg, sam2_checkpoint)
 
     sam2 = build_sam2(model_cfg, sam2_checkpoint, device='cuda', apply_postprocessing=False)
 
-    sam_ckpt_path = args.sam2_checkpoint
+    sam_ckpt_path = args.sam1_checkpoint
 
     sam = sam_model_registry["vit_h"](checkpoint=sam_ckpt_path).to('cuda')
     mask_generator = SamAutomaticMaskGenerator(

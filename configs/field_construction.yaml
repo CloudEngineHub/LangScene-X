@@ -1,0 +1,143 @@
+wandb:
+  enable_wandb: False 
+  project_name: "proj"
+pipeline:
+  rgb_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/rgb/video_ckpt_800.mp4
+  seg_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/seg/video_ckpt_800.mp4
+  normal_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/normal/video_ckpt_800.mp4
+  data_path: "/home/lff/data1/cjw/langscene/field_construction/data/kitchen"
+  skip_video_process: False
+  skip_pose_estimate: True
+  skip_lang_feature_extraction: False
+  load_iteration: 10_000
+  selection: False
+  selected_idxs: []
+  chunk_num: 8  
+  keep_num_per_chunk: 3
+  mode: "train"
+
+video_processor:
+  img_format: "png"
+
+feature_extractor:
+  type: "open-seg"
+  model_path: "/home/lff/data1/cjw/langscene/model_zoo/openseg_exported_clip"
+
+pose_estimator:
+  type: "vggt"
+  device: "cuda"
+  # model_path: "/home/lff/data1/cjw/langscene/model_zoo/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth"
+  # model_path: "model_zoo/cut3r/cut3r_512_dpt_4_64.pth"
+  # depth_thre: 0.01
+  # co_vis_dsp: True
+
+lseg:
+  model_path: "model_zoo/lseg/demo_e200.ckpt"
+  device: "cuda"
+
+ae:
+  model_path: "model_zoo/ae/model.safetensors"
+  device: "cuda"
+
+gaussian:
+  debug_from: -100
+  detect_anomaly: False
+  test_iterations: [100, 500, 1000, 2000, 5000, 10_000, 12_000]
+  save_iterations: [100, 500, 1000, 2000, 5000, 10_000, 12_000]
+  quiet: False
+  checkpoint_iterations: [100, 500, 1000, 5000, 10_000, 12_000]
+  start_checkpoint: None
+
+  dataset:
+    sh_degree: 3
+    source_path: "/home/lff/data1/cjw/langscene/field_construction/data/kitchen"
+    model_path: "/home/lff/data1/cjw/langscene/field_construction/outputs/kitchen"
+    images: "input"
+    normal: "normal"
+    resolution: -1
+    white_background: False
+    data_device: "cuda" # "cuda" or "cpu"
+    eval: False
+    preload_img: True
+    ncc_scale: 1.0
+    multi_view_num: 8
+    multi_view_max_angle: 30
+    multi_view_min_dis: 0.01
+    multi_view_max_dis: 1.5
+    language_features_name: "lang_features_dim3"
+    
+  opt:
+    pp_optimizer: False
+    optim_pose: True
+    pose_until_iter: 2000
+    iterations: 12_000
+    max_geo_iter: 1500  
+    normal_optim: False
+
+    position_lr_init: 0.00016
+    position_lr_final: 0.0000016
+    position_lr_delay_mult: 0.01
+    position_lr_max_steps: 1000
+    feature_lr: 0.0025
+    opacity_lr: 0.05
+    language_feature_lr: 0.0050
+    instance_feature_lr: 0.0050
+    scaling_lr: 0.005
+    rotation_lr: 0.001
+    percent_dense: 0.001
+    lambda_dssim: 0.2
+    densification_interval: 100
+    opacity_reset_interval: 999_999
+    densify_from_iter: 500
+    densify_until_iter: 1200
+    # densify_from_iter: 999_999
+    # densify_until_iter: -1
+    # densify_grad_threshold: 0.0002
+    densify_grad_threshold: 0.004
+    scale_loss_weight: 100.0
+    wo_image_weight: False
+    single_view_weight: 0.10
+    single_view_weight_from_iter: 500
+    single_view_weight_end_iter: 2000
+    instance_supervision_from_iter: 12_001
+    use_virtul_cam: False
+    virtul_cam_prob: 0.5
+    use_multi_view_trim: True
+    multi_view_ncc_weight: 0.15
+    multi_view_geo_weight: 0.03
+    multi_view_weight_from_iter: 500
+    multi_view_weight_end_iter: 2000
+    multi_view_patch_size: 3
+    multi_view_sample_num: 102400
+    multi_view_pixel_noise_th: 1.0
+    wo_use_geo_occ_aware: False
+    opacity_cull_threshold: 0.05
+    # densify_abs_grad_threshold: 0.0008
+    densify_abs_grad_threshold: 0.016
+    abs_split_radii2D_threshold: 20
+    max_abs_split_points: 0
+    max_all_points: 12_000_000
+    exposure_compensation: False
+    random_background: False
+    reg3d_start: 2
+    reg3d_k: 5
+    reg3d_lambda_val: 4
+    lang_loss_start_iter: 1200
+    grouping_loss: True
+    loss_obj_3d: True
+
+  pipe:
+    convert_SHs_python: False
+    compute_cov3D_python: False
+    debug: False
+  
+  render:
+    load_iteration: 10_000
+    pose_optim_iter: 100
+    voxel_size: 0.01
+    normalized: True
+    include_features: True
+    
+  eval:
+    eval_data_path: ""
+    pose_optim_iter: 100

@@ -1,0 +1,27 @@
+# ninja log v5
+1	3269	1740114322642951852	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	aa1daee3d707d538
+1	3499	1740114322874950457	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	ccc62c27cc08f3d2
+1	10560	1740114329930908314	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	b10d15ada471cc56
+2	16378	1740114335754873938	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/ext.o	5065cf0abad3b1dc
+2	51547	1740114370898674085	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	69fcc9f1b32d75
+17	3419	1740115149196330150	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	aa1daee3d707d538
+16	3568	1740115149352329917	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	ccc62c27cc08f3d2
+17	10358	1740115156128319828	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	b10d15ada471cc56
+18	50342	1740115196108262280	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	69fcc9f1b32d75
+18	3188	1740115705015741260	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	aa1daee3d707d538
+18	3450	1740115705271741067	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	ccc62c27cc08f3d2
+18	10867	1740115712691735492	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	b10d15ada471cc56
+19	51652	1740115753455705563	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	69fcc9f1b32d75
+16	3577	1740119157035453892	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	aa1daee3d707d538
+15	3811	1740119157275453274	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	ccc62c27cc08f3d2
+16	11339	1740119164799433919	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	b10d15ada471cc56
+17	56708	1740119210139319436	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	69fcc9f1b32d75
+21	3532	1740331667538673799	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	aa1daee3d707d538
+20	3750	1740331667758673391	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	ccc62c27cc08f3d2
+21	11715	1740331675714658604	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	b10d15ada471cc56
+21	77173	1740331741158535523	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-LangSurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	69fcc9f1b32d75
+56	3946	1743475571713662010	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-langsurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	87ff917ebb3c08f0
+57	4118	1743475571889660174	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-langsurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	874625155179daf1
+57	11768	1743475579533580803	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-langsurf-rasterizer/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	355dd834fa004c2c
+58	45380	1743475613145239337	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-langsurf-rasterizer/build/temp.linux-x86_64-cpython-310/ext.o	6f5822467011ce30
+58	78044	1743475645788918929	/home/lff/data1/cjw/langscene/field_construction/submodules/diff-langsurf-rasterizer/build/temp.linux-x86_64-cpython-310/rasterize_points.o	bad4edeb9a9f8d44

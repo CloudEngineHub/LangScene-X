@@ -1,0 +1,6 @@
+# ninja log v5
+0	12297	1738928421634260698	/home/lff/data1/cjw/langsurf/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/simple_knn.o	d46cb6c1fa2743be
+0	15674	1738928425022258801	/home/lff/data1/cjw/langsurf/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o	cf97e4655b947383
+1	55844	1738928465166236101	/home/lff/data1/cjw/langsurf/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o	254885e516e13077
+12	16383	1738952012556225773	/home/lff/data1/cjw/langsurf/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o	cf97e4655b947383
+13	51114	1738952047264286700	/home/lff/data1/cjw/langsurf/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o	254885e516e13077

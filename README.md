@@ -3,7 +3,7 @@
 # ✨LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion✨
 
 <p align="center">
-    <a href="https://liuff19.github.io/">Fangfu Liu<sup>1</sup>,
+<a href="https://liuff19.github.io/">Fangfu Liu<sup>1</sup>,
 <a href="https://lifuguan.github.io/">Hao Li<sup>2</sup>,
 <a href="https://github.com/chijw">Jiawei Chi<sup>1</sup>,
 <a href="https://hanyang-21.github.io/">Hanyang Wang<sup>1,3</sup>,
@@ -57,7 +57,7 @@ pip install -e auto-seg/submodules/segment-anything-2
 pip install -r requirements.txt
 ```
 
-### Model Checkpoints
+### 3. Model Checkpoints
 
 The following model checkpoints need to be download manually:
 

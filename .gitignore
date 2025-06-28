@@ -1,6 +1,6 @@
 .vscode
 *.log
 
-/__pycache__/
-/data/
-/output/
+**/__pycache__/
+**/data/
+**/output/

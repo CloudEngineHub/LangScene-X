@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ### 3. Model Checkpoints
 
-The following model checkpoints need to be download manually:
+The following model checkpoints need to be downloaded manually:
 
 - [sam_vit_h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
 

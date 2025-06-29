@@ -65,7 +65,7 @@ The following model checkpoints need to be downloaded manually:
 
 - [sam2_hiera_large](https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt)
 - [CogVideoX (except DiT)](https://huggingface.co/THUDM/CogVideoX1.5-5B-I2V/tree/main)
-- [Our Fine-tuned DiT](https://github.com/chijw/LangScene-X)
+- [Our Fine-tuned DiT](https://drive.google.com/file/d/1fGc7F1S6RnMb6AmCMvG_c5JUeH3NWwOK/view?usp=sharing)
 
 
 ## 💻Running

@@ -124,10 +124,9 @@ def render(
 
     if include_feature:
         language_feature_precomp = pc.get_language_feature
-        language_feature_precomp = language_feature_precomp/ (language_feature_precomp.norm(dim=-1, keepdim=True) + 1e-9)
-
         instance_feature_precomp = pc.get_instance_feature
-        instance_feature_precomp = instance_feature_precomp/ (instance_feature_precomp.norm(dim=-1, keepdim=True) + 1e-9)
+        # language_feature_precomp = language_feature_precomp / (language_feature_precomp.norm(dim=-1, keepdim=True) + 1e-9)
+        # instance_feature_precomp = instance_feature_precomp / (instance_feature_precomp.norm(dim=-1, keepdim=True) + 1e-9)
         # language_feature_precomp = torch.sigmoid(language_feature_precomp)
     else:
         language_feature_precomp = torch.zeros((1,), dtype=opacity.dtype, device=opacity.device)

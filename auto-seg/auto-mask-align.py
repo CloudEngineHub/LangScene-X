@@ -591,7 +591,16 @@ if __name__ == '__main__':
     def generate_random_colors(num_colors):
         colors = []
         for _ in range(num_colors):
-            color = tuple(random.randint(0, 255) for _ in range(3))
+            reroll = True
+            iter_cnt = 0
+            while reroll and iter_cnt < 100:
+                iter_cnt += 1
+                reroll = False
+                color = tuple(random.randint(1, 255) for _ in range(3))
+                for selected_color in colors:
+                    if np.linalg.norm(np.array(color) - np.array(selected_color)) < 70:
+                        reroll = True
+                        break
             colors.append(color)
         return colors
 

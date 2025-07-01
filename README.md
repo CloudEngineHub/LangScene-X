@@ -11,7 +11,7 @@
 <a href="https://github.com/chijw/LangScene-X">Fudong Wang</a><sup>3</sup>,   
 <a href="https://duanyueqi.github.io/">Yueqi Duan</a><sup>1</sup>
 <br>
-    <sup>1</sup>Tsinghua University, <sup>2</sup>Northwestern Polytechnical University, <sup>3</sup>Ant Group     
+    <sup>1</sup>Tsinghua University, <sup>2</sup>Nanyang Technological University, <sup>3</sup>Ant Group     
 </p>
 <a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;

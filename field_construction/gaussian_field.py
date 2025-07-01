@@ -608,6 +608,7 @@ class GaussianField():
         pipe = cfg.gaussian.pipe
         device = cfg.gaussian.dataset.data_device
         render_cfg = cfg.gaussian.render
+        opt = cfg.gaussian.opt
 
         logging.info("Rendering " + dataset.model_path)
         safe_state(cfg.gaussian.quiet)
@@ -650,7 +651,11 @@ class GaussianField():
             for idx, view in enumerate(tqdm(self.scene.getTrainCameras(), desc="Rendering progress")):
                 camera_pose = get_tensor_from_camera(view.world_view_transform.transpose(0, 1))
                 gt, _ = view.get_image()
-                out = render(view, self.gaussians, pipe, background, app_model=None, camera_pose=camera_pose)
+                if not opt.optim_pose:
+                    out = render(view, self.gaussians, pipe, background, app_model=None)
+                else:
+                    out = render(view, self.gaussians, pipe, background, app_model=None, camera_pose=camera_pose)
+
                 rendering = out["render"].clamp(0.0, 1.0)
                 _, H, W = rendering.shape
 

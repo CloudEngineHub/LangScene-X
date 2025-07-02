@@ -150,8 +150,8 @@ class Preprocessor:
         # proc.join()
         extract_with_openseg(self.cfg)
         logging.info("Done feature extraction.")
-        # train a ae via lang_feature
-        num_epochs = 500
+
+        num_epochs = 400
         os.makedirs(os.path.join(self.cfg.pipeline.data_path, "ckpt"), exist_ok=True)
         save_path = os.path.join(self.cfg.pipeline.data_path, "lang_features")
         train_dataset = Autoencoder_dataset(save_path)

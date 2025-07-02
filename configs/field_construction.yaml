@@ -9,7 +9,7 @@ pipeline:
   skip_video_process: False
   skip_pose_estimate: True
   skip_lang_feature_extraction: False
-  load_iteration: 10_000
+  load_iteration: 5_000
   selection: False
   selected_idxs: []
   chunk_num: 8  
@@ -132,7 +132,7 @@ gaussian:
     debug: False
   
   render:
-    load_iteration: 10_000
+    load_iteration: 5_000
     pose_optim_iter: 100
     voxel_size: 0.01
     normalized: True

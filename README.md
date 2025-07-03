@@ -7,15 +7,15 @@
 <a href="https://lifuguan.github.io/">Hao Li</a><sup>2</sup>,
 <a href="https://github.com/chijw">Jiawei Chi</a><sup>1</sup>,
 <a href="https://hanyang-21.github.io/">Hanyang Wang</a><sup>1,3</sup>,
-<a href="https://github.com/chijw/LangScene-X">Minghui Yang</a><sup>3</sup>,
-<a href="https://github.com/chijw/LangScene-X">Fudong Wang</a><sup>3</sup>,   
+<a href="https://github.com/liuff19/LangScene-X">Minghui Yang</a><sup>3</sup>,
+<a href="https://github.com/liuff19/LangScene-X">Fudong Wang</a><sup>3</sup>,   
 <a href="https://duanyueqi.github.io/">Yueqi Duan</a><sup>1</sup>
 <br>
     <sup>1</sup>Tsinghua University, <sup>2</sup>NTU, <sup>3</sup>Ant Group     
 </p>
 <h3 align="center">ICCV 2025 🔥</h3>
-<a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://huggingface.co/chijw/LangScene-X"><img src='https://img.shields.io/badge/LangSceneX-huggingface-yellow'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -38,7 +38,7 @@ Pipeline of LangScene-X. Our model is composed of a TriMap Video Diffusion model
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/chijw/LangScene-X.git
+git clone https://github.com/liuff19/LangScene-X.git
 cd LangScene-X
 ```
 ### 2. Environment Setup

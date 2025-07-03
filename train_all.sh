@@ -21,5 +21,6 @@ for scene in "${scenes[@]}"; do
     gaussian.opt.optim_pose=False \
     pipeline.skip_video_process=False \
     pipeline.skip_lang_feature_extraction=False 
+    
     # pipeline.mode="render"
 done

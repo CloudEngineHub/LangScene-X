@@ -76,6 +76,7 @@ def main():
         del pipe
         torch.cuda.empty_cache()
 
+
     print("All checkpoints processing completed!")
 
 if __name__ == "__main__":

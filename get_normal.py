@@ -36,5 +36,7 @@ def main():
             normal_frame = predictor(Image.fromarray(frame.numpy()))
             normal_frame.save(os.path.join(args.normal_save_path, f"{frame_ind:04d}.png"))
 
+
+
 if __name__ == "__main__":
     main()

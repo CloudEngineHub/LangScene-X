@@ -3,10 +3,10 @@
 # ✨LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion✨
 
 <p align="center">
-<a href="https://liuff19.github.io/">Fangfu Liu<sup>1</sup>,
-<a href="https://lifuguan.github.io/">Hao Li<sup>2</sup>,
-<a href="https://github.com/chijw">Jiawei Chi<sup>1</sup>,
-<a href="https://hanyang-21.github.io/">Hanyang Wang<sup>1,3</sup>,
+<a href="https://liuff19.github.io/">Fangfu Liu</a><sup>1</sup>,
+<a href="https://lifuguan.github.io/">Hao Li</a><sup>2</sup>,
+<a href="https://github.com/chijw">Jiawei Chi</a><sup>1</sup>,
+<a href="https://hanyang-21.github.io/">Hanyang Wang</a><sup>1,3</sup>,
 <a href="https://github.com/chijw/LangScene-X">Minghui Yang</a><sup>3</sup>,
 <a href="https://github.com/chijw/LangScene-X">Fudong Wang</a><sup>3</sup>,   
 <a href="https://duanyueqi.github.io/">Yueqi Duan</a><sup>1</sup>

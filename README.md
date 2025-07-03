@@ -11,7 +11,7 @@
 <a href="https://github.com/chijw/LangScene-X">Fudong Wang</a><sup>3</sup>,   
 <a href="https://duanyueqi.github.io/">Yueqi Duan</a><sup>1</sup>
 <br>
-    <sup>1</sup>Tsinghua University, <sup>2</sup>Nanyang Technological University, <sup>3</sup>Ant Group     
+    <sup>1</sup>Tsinghua University, <sup>2</sup>NTU, <sup>3</sup>Ant Group     
 </p>
 
 <h3 align="center">ICCV 2025 🔥</h3>

@@ -6,7 +6,6 @@ import torchvision.io as io
 from PIL import Image
 from tqdm import tqdm
 
-
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--base_path", type=str)

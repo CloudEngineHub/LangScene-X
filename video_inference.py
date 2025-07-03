@@ -7,7 +7,6 @@ from diffusers.utils import export_to_video, load_image
 
 from cogvideox_interpolation.pipeline import CogVideoXInterpolationPipeline
 
-
 def parse_args():
     parser = argparse.ArgumentParser(description='Video interpolation with different checkpoints')
     parser.add_argument('--model_path', type=str, help='Path to the base model')

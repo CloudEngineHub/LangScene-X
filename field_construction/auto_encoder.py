@@ -16,8 +16,6 @@ class Autoencoder_dataset(Dataset):
             data.append(features)
 
         self.data = torch.cat(data, dim=0).float()
-        # self.data = torch.stack(data, dim=0).float()
-        # self.data = self.data.flatten(end_dim=-2).float()
 
     def __getitem__(self, index):
         data = self.data[index]

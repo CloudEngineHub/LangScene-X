@@ -1,5 +1,4 @@
 # @package _global_
-
 # Model
 model:
   _target_: sam2.modeling.sam2_base.SAM2Base

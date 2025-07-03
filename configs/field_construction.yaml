@@ -2,10 +2,10 @@ wandb:
   enable_wandb: False 
   project_name: "proj"
 pipeline:
-  rgb_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/rgb/video_ckpt_800.mp4
-  seg_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/seg/video_ckpt_800.mp4
-  normal_video_path: /home/lff/data1/cjw/langscene/outputs/kitchen/normal/video_ckpt_800.mp4
-  data_path: "/home/lff/data1/cjw/langscene/field_construction/data/kitchen"
+  rgb_video_path: /outputs/kitchen/rgb/video_ckpt.mp4
+  seg_video_path: /outputs/kitchen/seg/video_ckpt.mp4
+  normal_video_path: /outputs/kitchen/normal/video_ckpt.mp4
+  data_path: "/field_construction/data/kitchen"
   skip_video_process: False
   skip_pose_estimate: True
   skip_lang_feature_extraction: False

@@ -9,9 +9,9 @@ base_out_path="field_construction/outputs"
 for scene in "${scenes[@]}"; do
     scene_video_path="${base_video_path}/${scene}"
     python entry_point.py \
-    pipeline.rgb_video_path="${scene_video_path}/rgb/video_ckpt_800.mp4" \
-    pipeline.normal_video_path="${scene_video_path}/normal/video_ckpt_800.mp4" \
-    pipeline.seg_video_path="${scene_video_path}/seg/video_ckpt_800.mp4" \
+    pipeline.rgb_video_path="${scene_video_path}/rgb/video_ckpt.mp4" \
+    pipeline.normal_video_path="${scene_video_path}/normal/video_ckpt.mp4" \
+    pipeline.seg_video_path="${scene_video_path}/seg/video_ckpt.mp4" \
     pipeline.data_path="${base_data_path}/${scene}" \
     gaussian.dataset.source_path="${base_data_path}/${scene}" \
     gaussian.dataset.model_path="${base_out_path}/${scene}" \

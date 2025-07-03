@@ -1,7 +1,7 @@
 #!/bin/bash
 
-first_image=$1
-last_image=$2
+first_image="demo/rgb/0001.png"
+last_image="demo/rgb/0002.png"
 
 sam_model_path="sam/ckpt"
 sam2_model_path="sam2/ckpt"

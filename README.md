@@ -23,7 +23,7 @@
 
 </div>
 
-**LangScene-X:** We propose LangScene-X, An unified model that generates RGB, segmentation map, and normal map and the following reconstructed 3D field from sparse views input.
+**LangScene-X:** We propose LangScene-X, a unified model that generates RGB, segmentation map, and normal map, enabling to reconstruct 3D field from sparse views input.
 
 ## 📢 News
 - 🔥 [04/07/2025] We release "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion". Check our [project page](https://github.com/chijw/LangScene-X) and [arXiv paper](https://github.com/chijw/LangScene-X).
@@ -32,7 +32,7 @@
 
 ![Pipeline Visualization](assets/pipeline.png)
 
-Pipeline of LangScene-X. Our model is composed of a TriMap Video Diffusion model which generates RGB, segmentation map, and normal map videos, an Auto Encoder that compress the language feature, and a field constructor that reconstruct 3DGS from the generates videos. 
+Pipeline of LangScene-X. Our model is composed of a TriMap Video Diffusion model which generates RGB, segmentation map, and normal map videos, an Auto Encoder that compresses the language feature, and a field constructor that reconstructs 3DGS from the generated videos. 
 
 ## ⚙️ Setup
 

@@ -37,26 +37,11 @@ Pipeline of LangScene-X. Our model is composed of a TriMap Video Diffusion model
 
 ## 🎨 Video Demos from TriMap Video Diffusion
 
-<details open>
-    <summary>video1.mp4</summary>
-    <video poster="" id="demo-video1" autoplay controls muted loop height="100%">
-      <source src="assets/para1.mp4" type="video/mp4">
-    </video>
-</details>
+https://github.com/user-attachments/assets/55346d53-eb04-490e-bb70-64555e97e040
 
-<details open>
-    <summary>video2.mp4</summary>
-    <video poster="" id="demo-video2" autoplay controls muted loop height="100%">
-      <source src="assets/para2.mp4" type="video/mp4">
-    </video>
-</details>
+https://github.com/user-attachments/assets/d6eb28b9-2af8-49a7-bb8b-0d4cba7843a5
 
-<details open>
-    <summary>video3.mp4</summary>
-    <video poster="" id="demo-video3" autoplay controls muted loop height="100%">
-      <source src="assets/para3.mp4" type="video/mp4">
-    </video>
-</details>
+https://github.com/user-attachments/assets/396f11ef-85dc-41de-882e-e249c25b9961
 
 ## ⚙️ Setup
 

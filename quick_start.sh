@@ -3,10 +3,9 @@
 first_image=$1
 last_image=$2
 
-sam_model_path="/home/lff/data1/cjw/langsurf/model_zoo/sam_vit_h_4b8939.pth"
-sam2_model_path="/home/lff/bigdata1/cjw/checkpoints/sam2/sam2_hiera_large.pt"
-model_path="/home/lff/bigdata1/cjw/model_cache/CogvideoX-Interpolation"
-transformer_ckpt="/home/lff/bigdata1/cjw/checkpoints/cogvideox_ft"
+sam_model_path="sam/ckpt"
+sam2_model_path="sam2/ckpt"
+model_path="CogVideo-X/ckpt"
 
 mkdir -p demo/rgb
 cp $first_image demo/rgb/0001.png
@@ -26,21 +25,18 @@ python get_normal.py --base_path demo
 RGB video interpolation
 python video_inference.py \
     --model_path $model_path \
-    --base_ckpt_path $transformer_ckpt \
     --output_dir demo/video/rgb \
     --first_image demo/rgb/0001.png \
     --last_image demo/rgb/0002.png
 # Segmentation map video interpolation
 python video_inference.py \
     --model_path $model_path \
-    --base_ckpt_path $transformer_ckpt \
     --output_dir demo/video/seg \
     --first_image demo/seg/0001.png \
     --last_image demo/seg/0002.png
 # Normal map video interpolation
 python video_inference.py \
     --model_path $model_path \
-    --base_ckpt_path $transformer_ckpt \
     --output_dir demo/video/normal \
     --first_image demo/normal/0001.png \
     --last_image demo/normal/0002.png
@@ -59,7 +55,7 @@ python entry_point.py \
     pipeline.selection=False \
     gaussian.opt.max_geo_iter=1500 \
     gaussian.opt.normal_optim=True \
-    gaussian.opt.optim_pose=True \
+    gaussian.opt.optim_pose=False \
     pipeline.skip_video_process=False \
     pipeline.skip_pose_estimate=False \
     pipeline.skip_lang_feature_extraction=False

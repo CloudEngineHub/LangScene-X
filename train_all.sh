@@ -2,9 +2,9 @@
 
 scenes=("kitchen" "ramen" "teatime" "0085" "0114" "0616" "0617")
 
-base_video_path="/home/lff/data1/cjw/langscene/outputs"
-base_data_path="/home/lff/data1/cjw/langscene/field_construction/data"
-base_out_path="/home/lff/data1/cjw/langscene/field_construction/outputs"
+base_video_path="outputs"
+base_data_path="field_construction/data"
+base_out_path="field_construction/outputs"
 
 for scene in "${scenes[@]}"; do
     scene_video_path="${base_video_path}/${scene}"
@@ -17,9 +17,9 @@ for scene in "${scenes[@]}"; do
     gaussian.dataset.model_path="${base_out_path}/${scene}" \
     pipeline.selection=False \
     gaussian.opt.max_geo_iter=1500 \
-    gaussian.opt.normal_optim=False \
-    gaussian.opt.optim_pose=True \
-    pipeline.skip_video_process=True \
-    pipeline.skip_lang_feature_extraction=True 
+    gaussian.opt.normal_optim=True \
+    gaussian.opt.optim_pose=False \
+    pipeline.skip_video_process=False \
+    pipeline.skip_lang_feature_extraction=False 
     # pipeline.mode="render"
 done

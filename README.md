@@ -16,6 +16,7 @@
 <a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/chijw/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://huggingface.co/chijw/LangScene-X"><img src='https://img.shields.io/badge/LangSceneX-huggingface-yellow'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 
 ![Teaser Visualization](assets/teaser.png)
 
@@ -58,15 +59,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Model Checkpoints
-
-The following model checkpoints need to be downloaded manually:
-
-- [sam_vit_h](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
-
-- [sam2_hiera_large](https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt)
-- [CogVideoX (except DiT)](https://huggingface.co/THUDM/CogVideoX1.5-5B-I2V/tree/main)
-- [Our Fine-tuned DiT](https://drive.google.com/file/d/1fGc7F1S6RnMb6AmCMvG_c5JUeH3NWwOK/view?usp=sharing)
-
+The checkpoints of SAM, SAM2 and fine-tuned CogVideoX can be downloaded from our [huggingface repository](https://huggingface.co/chijw/LangScene-X).
 
 ## 💻Running
 

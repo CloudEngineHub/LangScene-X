@@ -15,7 +15,7 @@
 </p>
 <h3 align="center">ICCV 2025 🔥</h3>
 <a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://liuff19.github.io/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://huggingface.co/chijw/LangScene-X"><img src='https://img.shields.io/badge/LangSceneX-huggingface-yellow'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 

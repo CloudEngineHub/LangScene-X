@@ -94,13 +94,7 @@ You can also configurate by editting `configs/field_construction.yaml`.
 
 We are thankful for the following great works when implementing LangScene-X:
 
-- [CogVideoX](https://github.com/THUDM/CogVideo)
-- [CogvideX-Interpolation](https://github.com/feizc/CogvideX-Interpolation)
-- [LangSplat](https://github.com/minghanqin/LangSplat)
-- [LangSurf](https://github.com/lifuguan/LangSurf)
-- [VGGT](https://github.com/facebookresearch/vggt)
-- [3DGS](https://github.com/graphdeco-inria/gaussian-splatting)
-- [SAM2](https://github.com/facebookresearch/sam2)
+- [CogVideoX](https://github.com/THUDM/CogVideo), [CogvideX-Interpolation](https://github.com/feizc/CogvideX-Interpolation), [LangSplat](https://github.com/minghanqin/LangSplat), [LangSurf](https://github.com/lifuguan/LangSurf), [VGGT](https://github.com/facebookresearch/vggt), [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [SAM2](https://github.com/facebookresearch/sam2)
 
 ## 📚Citation
 

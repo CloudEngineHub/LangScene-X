@@ -26,10 +26,6 @@ feature_extractor:
 pose_estimator:
   type: "vggt"
   device: "cuda"
-  # model_path: "/home/lff/data1/cjw/langscene/model_zoo/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth"
-  # model_path: "model_zoo/cut3r/cut3r_512_dpt_4_64.pth"
-  # depth_thre: 0.01
-  # co_vis_dsp: True
 
 lseg:
   model_path: "model_zoo/lseg/demo_e200.ckpt"

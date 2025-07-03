@@ -7,7 +7,6 @@
 # under the terms of the LICENSE.md file.
 #
 # For inquiries contact  george.drettakis@inria.fr
-#
 from errno import EEXIST
 from os import makedirs, path
 import os

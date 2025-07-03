@@ -144,10 +144,6 @@ class Preprocessor:
 
         
     def generate_lang_features_with_openseg(self):
-        # multiprocessing.set_start_method('spawn', force=True)
-        # proc = multiprocessing.Process(target=extract_with_openseg, args=(self.cfg,))
-        # proc.start()
-        # proc.join()
         extract_with_openseg(self.cfg)
         logging.info("Done feature extraction.")
 

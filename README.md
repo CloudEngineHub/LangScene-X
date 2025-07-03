@@ -34,6 +34,30 @@
 
 Pipeline of LangScene-X. Our model is composed of a TriMap Video Diffusion model which generates RGB, segmentation map, and normal map videos, an Auto Encoder that compresses the language feature, and a field constructor that reconstructs 3DGS from the generated videos. 
 
+
+## 🎨 Video Demos from TriMap Video Diffusion
+
+<details open>
+    <summary>video1.mp4</summary>
+    <video poster="" id="demo-video1" autoplay controls muted loop height="100%">
+      <source src="assets/para1.mp4" type="video/mp4">
+    </video>
+</details>
+
+<details open>
+    <summary>video2.mp4</summary>
+    <video poster="" id="demo-video2" autoplay controls muted loop height="100%">
+      <source src="assets/para2.mp4" type="video/mp4">
+    </video>
+</details>
+
+<details open>
+    <summary>video3.mp4</summary>
+    <video poster="" id="demo-video3" autoplay controls muted loop height="100%">
+      <source src="assets/para3.mp4" type="video/mp4">
+    </video>
+</details>
+
 ## ⚙️ Setup
 
 ### 1. Clone Repository
@@ -89,6 +113,12 @@ python entry_point.py \
     pipeline.mode="render"
 ```
 You can also configurate by editting `configs/field_construction.yaml`.
+
+## ✒️ TODO List
+- [x] Per-scene Auto Encoder released
+- [x] Fine-tuned CogVideoX checkpoints released
+- [ ] Generalizable Auto Encoder (LQC)
+- [ ] Improved TriMap Video Diffusion model
 
 ## 🔗Acknowledgement
 

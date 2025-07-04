@@ -14,7 +14,7 @@
     <sup>1</sup>Tsinghua University, <sup>2</sup>NTU, <sup>3</sup>Ant Group     
 </p>
 <h3 align="center">ICCV 2025 🔥</h3>
-<a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/arXiv-tbd.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/liuff19/LangScene-X"><img src='https://img.shields.io/badge/arXiv-2507.02813-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://liuff19.github.io/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://huggingface.co/chijw/LangScene-X"><img src='https://img.shields.io/badge/LangSceneX-huggingface-yellow'></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,7 +26,7 @@
 **LangScene-X:** We propose LangScene-X, a unified model that generates RGB, segmentation map, and normal map, enabling to reconstruct 3D field from sparse views input.
 
 ## 📢 News
-- 🔥 [04/07/2025] We release "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion". Check our [project page](https://liuff19.github.io/LangScene-X) and [arXiv paper](https://github.com/liuff19/LangScene-X).
+- 🔥 [04/07/2025] We release "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion". Check our [project page](https://liuff19.github.io/LangScene-X) and [arXiv paper](https://arxiv.org/abs/2507.02813).
 
 ## 🌟 Pipeline
 
@@ -114,10 +114,13 @@ We are thankful for the following great works when implementing LangScene-X:
 ## 📚Citation
 
 ```bibtex
-@article{,
-  title={LangScene-X: Generating 3D Language-Embedded Scenes with TriMap Video Diffusion},
-  author={Liu, Fangfu and and Li, Hao and Chi, Jiawei and Wang, Hanyang and Yang, Minghui and Wang, Fudong and Duan, Yueqi},
-  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-  year={2025}
+@misc{liu2025langscenexreconstructgeneralizable3d,
+      title={LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with TriMap Video Diffusion}, 
+      author={Fangfu Liu and Hao Li and Jiawei Chi and Hanyang Wang and Minghui Yang and Fudong Wang and Yueqi Duan},
+      year={2025},
+      eprint={2507.02813},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.02813}, 
 }
 ```

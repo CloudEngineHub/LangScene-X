@@ -60,8 +60,8 @@ conda activate langscenex
 2. **Install dependencies**
 ```bash
 conda install pytorch torchvision -c pytorch -y
-pip install -e submodules/simple-knn
-pip install -e submodules/segment-anything-langsplat
+pip install -e field_construction/submodules/simple-knn
+pip install -e field_construction/submodules/diff-langsurf-rasterizer
 pip install -e auto-seg/submodules/segment-anything-1
 pip install -e auto-seg/submodules/segment-anything-2
 pip install -r requirements.txt

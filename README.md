@@ -16,11 +16,10 @@
 <h3 align="center">ICCV 2025 🔥</h3>
 <a href="https://arxiv.org/abs/2507.02813"><img src='https://img.shields.io/badge/arXiv-2507.02813-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://liuff19.github.io/LangScene-X"><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;
-<a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://huggingface.co/chijw/LangScene-X"><img src='https://img.shields.io/badge/LangSceneX-huggingface-yellow'></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a><img src='https://img.shields.io/badge/License-MIT-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;
 
 ![Teaser Visualization](assets/teaser.png)
-
 </div>
 
 **LangScene-X:** We propose LangScene-X, a unified model that generates RGB, segmentation map, and normal map, enabling to reconstruct 3D field from sparse views input.

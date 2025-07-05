@@ -1,7 +1,7 @@
 #!/bin/bash
 
-first_image="demo/rgb/0001.png"
-last_image="demo/rgb/0002.png"
+first_image=$1
+last_image=$2
 
 sam_model_path="sam/ckpt"
 sam2_model_path="sam2/ckpt"
@@ -46,9 +46,9 @@ mkdir -p demo/data
 cp demo/seg/colors.npy demo/data
 
 python entry_point.py \
-    pipeline.rgb_video_path="demo/video/rgb/video_ckpt.mp4" \
-    pipeline.normal_video_path="demo/video/normal/video_ckpt.mp4" \
-    pipeline.seg_video_path="demo/video/seg/video_ckpt.mp4" \
+    pipeline.rgb_video_path="demo/video/rgb/video_ckpt_800.mp4" \
+    pipeline.normal_video_path="demo/video/normal/video_ckpt_800.mp4" \
+    pipeline.seg_video_path="demo/video/seg/video_ckpt_800.mp4" \
     pipeline.data_path="demo/data" \
     gaussian.dataset.source_path="demo/data" \
     gaussian.dataset.model_path="demo/output" \

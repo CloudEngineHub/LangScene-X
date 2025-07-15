@@ -9,12 +9,6 @@ import numpy as np
 import open3d as o3d
 import torch
 
-from dust3r.cloud_opt import GlobalAlignerMode, global_aligner
-from dust3r.image_pairs import make_pairs
-from dust3r.inference import inference
-from dust3r.utils.device import to_numpy
-from dust3r.utils.geometry import inv
-from mast3r.model import AsymmetricMASt3R
 from utils.sfm_utils import (compute_co_vis_masks, get_sorted_image_files,
                              load_images, save_extrinsic, save_intrinsics,
                              save_points3D)
@@ -104,11 +98,18 @@ class ColmapEstimator(BaseEstimator):
 
 class MASt3REstimator(BaseEstimator):
     def __init__(self, cfg):
+        from mast3r.model import AsymmetricMASt3R
         self.cfg = cfg
         self.device = cfg.pose_estimator.device
         self.model = AsymmetricMASt3R.from_pretrained(cfg.pose_estimator.model_path).to(self.device)
 
     def get_poses(self):
+        from dust3r.cloud_opt import GlobalAlignerMode, global_aligner
+        from dust3r.image_pairs import make_pairs
+        from dust3r.inference import inference
+        from dust3r.utils.device import to_numpy
+        from dust3r.utils.geometry import inv
+
         save_path = self.cfg.pipeline.data_path
         co_vis_dsp = self.cfg.pose_estimator.co_vis_dsp
         sparse_path = os.path.join(save_path, "sparse", "0")

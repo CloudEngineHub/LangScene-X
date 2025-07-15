@@ -3,9 +3,9 @@
 first_image=$1
 last_image=$2
 
-sam_model_path="sam/ckpt"
-sam2_model_path="sam2/ckpt"
-model_path="CogVideo-X/ckpt"
+sam_model_path="./sam_vit_h_4b8939.pth"
+sam2_model_path="./sam2_hiera_large.pt"
+model_path="./CogVideo-X"
 
 mkdir -p demo/rgb
 cp $first_image demo/rgb/0001.png
